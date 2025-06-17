@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of AI-Powered Logistics</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <button id="theme-toggle">Dark Mode</button>
+  <!-- container containing personal information-->
+    <div class="container">
+        <h1 id="greeting"></h1>
+        <h2>Lead Cloud Engineer</h2>
+
+     <!-- name and Role section-->
+        <h2>Project: The Future of AI-Powered Medicine</h2>
+        <div class="pitch">
+          <p>
+            Our project redefines medical treatment through intelligent route diagnostics, automated collaboration, and real-time AI analytics. 
+            It's not just faster but better delivery to medicine.
+          </p>
+        </div>
+<!-- Bio section-->
+    <div class="bio">
+        <h3>About Me</h3>
+        <p>
+          I'm Mfoniso Markson, a passionate Cloud Engineer with hands-on experience in HTML,CSS,AWS, and LINUX. 
+          I’ve built and deployed scalable systems, automated infrastructure, and worked on cloud-native DevOps pipelines.
+          Currently pursuing cloud certifications with AltSchool Africa and building real-world projects that combine automation and resilience.
+        </p>
+      </div>
+      <!-- Date and time section-->
+      <div class="footer">
+        <p>Local time: <span id="time"></span></p>
+      </div>
+    </div>
+    <!-- Footer section containing greeting-->
+    <script>
+        // Personalized greeting based on time of the day
+        const greeting = document.getElementById('greeting');
+        const hour = new Date().getHours();
+        if (hour < 12) {
+          greeting.textContent = "Good morning, I'm Mfoniso Markson";
+        } else if (hour < 18) {
+          greeting.textContent = "Good afternoon, I'm Mfoniso Markson";
+        } else {
+          greeting.textContent = "Good evening, I'm Mfoniso Markson";
+        }
+    
+        // Local time
+        document.getElementById('time').textContent = new Date().toLocaleString();
+      </script>
+</body>
+</html>
